@@ -3,13 +3,15 @@
     public class ProductModel
     {
         public ProductModel() { }
-        public ProductModel(int _id, string _name,string _cat, double _price)
+        public ProductModel( string _name,string _cat, double _price)
         {
-            Id = _id;
+            Count++;
+            Id = Count;
             Name = _name;
             Category = _cat;
             Price = _price;
         }
+        static int Count { get; set; }
         public int Id { get; set; }
         public string Name { get; set; }
         public string Category { get; set; }

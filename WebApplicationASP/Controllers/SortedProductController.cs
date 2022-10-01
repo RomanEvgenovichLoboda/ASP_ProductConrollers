@@ -8,7 +8,7 @@ namespace WebApplicationASP.Controllers
     [Route("[controller]")]
     public class SortedProductController
     {
-        static List<ProductModel> products = new List<ProductModel>() { new ProductModel(1, "Gun", "weapon", 11000), new ProductModel(2, "TNT", "weapon", 5000), new ProductModel(3, "PC", "periphery", 10000) };
+        static List<ProductModel> products = new List<ProductModel>() { new ProductModel("Gun", "weapon", 11000), new ProductModel("TNT", "weapon", 5000), new ProductModel("PC", "periphery", 10000) };
         private readonly ILogger<SortedProductController> _logger;
         public SortedProductController(ILogger<SortedProductController> logger)
         {
